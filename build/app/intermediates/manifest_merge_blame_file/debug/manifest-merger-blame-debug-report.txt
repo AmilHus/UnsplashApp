@@ -1,0 +1,146 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.example.flutter_application_1"
+4    android:versionCode="1"
+5    android:versionName="1.0.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="21"
+9        android:targetSdkVersion="34" />
+10    <!--
+11         The INTERNET permission is required for development. Specifically,
+12         the Flutter tool needs it to communicate with the running application
+13         to allow setting breakpoints, to provide hot reload, etc.
+14    -->
+15    <uses-permission android:name="android.permission.INTERNET" />
+15-->C:\Users\amilg\Desktop\project\UnsplashApp\android\app\src\debug\AndroidManifest.xml:6:5-66
+15-->C:\Users\amilg\Desktop\project\UnsplashApp\android\app\src\debug\AndroidManifest.xml:6:22-64
+16    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+16-->C:\Users\amilg\Desktop\project\UnsplashApp\android\app\src\main\AndroidManifest.xml:2:5-80
+16-->C:\Users\amilg\Desktop\project\UnsplashApp\android\app\src\main\AndroidManifest.xml:2:22-78
+17    <uses-permission
+17-->C:\Users\amilg\Desktop\project\UnsplashApp\android\app\src\main\AndroidManifest.xml:3:5-79
+18        android:name="android.permission.READ_EXTERNAL_STORAGE"
+18-->C:\Users\amilg\Desktop\project\UnsplashApp\android\app\src\main\AndroidManifest.xml:3:22-77
+19        android:maxSdkVersion="32" />
+19-->[:open_filex] C:\Users\amilg\Desktop\project\UnsplashApp\build\open_filex\intermediates\merged_manifest\debug\AndroidManifest.xml:10:9-35
+20    <uses-permission android:name="android.permission.MANAGE_EXTERNAL_STORAGE" />
+20-->C:\Users\amilg\Desktop\project\UnsplashApp\android\app\src\main\AndroidManifest.xml:4:5-82
+20-->C:\Users\amilg\Desktop\project\UnsplashApp\android\app\src\main\AndroidManifest.xml:4:22-79
+21    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" />
+21-->C:\Users\amilg\Desktop\project\UnsplashApp\android\app\src\main\AndroidManifest.xml:5:5-76
+21-->C:\Users\amilg\Desktop\project\UnsplashApp\android\app\src\main\AndroidManifest.xml:5:22-73
+22    <uses-permission android:name="android.permission.READ_MEDIA_VIDEO" />
+22-->[:open_filex] C:\Users\amilg\Desktop\project\UnsplashApp\build\open_filex\intermediates\merged_manifest\debug\AndroidManifest.xml:12:5-75
+22-->[:open_filex] C:\Users\amilg\Desktop\project\UnsplashApp\build\open_filex\intermediates\merged_manifest\debug\AndroidManifest.xml:12:22-72
+23    <uses-permission android:name="android.permission.READ_MEDIA_AUDIO" />
+23-->[:open_filex] C:\Users\amilg\Desktop\project\UnsplashApp\build\open_filex\intermediates\merged_manifest\debug\AndroidManifest.xml:13:5-75
+23-->[:open_filex] C:\Users\amilg\Desktop\project\UnsplashApp\build\open_filex\intermediates\merged_manifest\debug\AndroidManifest.xml:13:22-72
+24
+25    <permission
+25-->[androidx.core:core:1.9.0] C:\Users\amilg\.gradle\caches\transforms-3\bf97dbe4435833ba72c763ca43efb1bb\transformed\core-1.9.0\AndroidManifest.xml:22:5-24:47
+26        android:name="com.example.flutter_application_1.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+26-->[androidx.core:core:1.9.0] C:\Users\amilg\.gradle\caches\transforms-3\bf97dbe4435833ba72c763ca43efb1bb\transformed\core-1.9.0\AndroidManifest.xml:23:9-81
+27        android:protectionLevel="signature" />
+27-->[androidx.core:core:1.9.0] C:\Users\amilg\.gradle\caches\transforms-3\bf97dbe4435833ba72c763ca43efb1bb\transformed\core-1.9.0\AndroidManifest.xml:24:9-44
+28
+29    <uses-permission android:name="com.example.flutter_application_1.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+29-->[androidx.core:core:1.9.0] C:\Users\amilg\.gradle\caches\transforms-3\bf97dbe4435833ba72c763ca43efb1bb\transformed\core-1.9.0\AndroidManifest.xml:26:5-97
+29-->[androidx.core:core:1.9.0] C:\Users\amilg\.gradle\caches\transforms-3\bf97dbe4435833ba72c763ca43efb1bb\transformed\core-1.9.0\AndroidManifest.xml:26:22-94
+30
+31    <application
+32        android:name="android.app.Application"
+33        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+33-->[androidx.core:core:1.9.0] C:\Users\amilg\.gradle\caches\transforms-3\bf97dbe4435833ba72c763ca43efb1bb\transformed\core-1.9.0\AndroidManifest.xml:28:18-86
+34        android:debuggable="true"
+35        android:icon="@mipmap/ic_launcher"
+36        android:label="flutter_application_1"
+37        android:requestLegacyExternalStorage="true" >
+38        <activity
+39            android:name="com.example.flutter_application_1.MainActivity"
+40            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
+41            android:exported="true"
+42            android:hardwareAccelerated="true"
+43            android:launchMode="singleTop"
+44            android:theme="@style/LaunchTheme"
+45            android:windowSoftInputMode="adjustResize" >
+46
+47            <!--
+48                 Specifies an Android theme to apply to this Activity as soon as
+49                 the Android process has started. This theme is visible to the user
+50                 while the Flutter UI initializes. After that, this theme continues
+51                 to determine the Window background behind the Flutter UI.
+52            -->
+53            <meta-data
+54                android:name="io.flutter.embedding.android.NormalTheme"
+55                android:resource="@style/NormalTheme" />
+56
+57            <intent-filter>
+58                <action android:name="android.intent.action.MAIN" />
+59
+60                <category android:name="android.intent.category.LAUNCHER" />
+61            </intent-filter>
+62        </activity>
+63        <!--
+64             Don't delete the meta-data below.
+65             This is used by the Flutter tool to generate GeneratedPluginRegistrant.java
+66        -->
+67        <meta-data
+68            android:name="flutterEmbedding"
+69            android:value="2" />
+70
+71        <provider
+71-->[:open_filex] C:\Users\amilg\Desktop\project\UnsplashApp\build\open_filex\intermediates\merged_manifest\debug\AndroidManifest.xml:16:9-25:20
+72            android:name="com.crazecoder.openfile.FileProvider"
+72-->[:open_filex] C:\Users\amilg\Desktop\project\UnsplashApp\build\open_filex\intermediates\merged_manifest\debug\AndroidManifest.xml:17:13-64
+73            android:authorities="com.example.flutter_application_1.fileProvider.com.crazecoder.openfile"
+73-->[:open_filex] C:\Users\amilg\Desktop\project\UnsplashApp\build\open_filex\intermediates\merged_manifest\debug\AndroidManifest.xml:18:13-88
+74            android:exported="false"
+74-->[:open_filex] C:\Users\amilg\Desktop\project\UnsplashApp\build\open_filex\intermediates\merged_manifest\debug\AndroidManifest.xml:19:13-37
+75            android:grantUriPermissions="true" >
+75-->[:open_filex] C:\Users\amilg\Desktop\project\UnsplashApp\build\open_filex\intermediates\merged_manifest\debug\AndroidManifest.xml:20:13-47
+76            <meta-data
+76-->[:open_filex] C:\Users\amilg\Desktop\project\UnsplashApp\build\open_filex\intermediates\merged_manifest\debug\AndroidManifest.xml:22:13-24:53
+77                android:name="android.support.FILE_PROVIDER_PATHS"
+77-->[:open_filex] C:\Users\amilg\Desktop\project\UnsplashApp\build\open_filex\intermediates\merged_manifest\debug\AndroidManifest.xml:23:17-67
+78                android:resource="@xml/filepaths" />
+78-->[:open_filex] C:\Users\amilg\Desktop\project\UnsplashApp\build\open_filex\intermediates\merged_manifest\debug\AndroidManifest.xml:24:17-50
+79        </provider>
+80
+81        <uses-library
+81-->[androidx.window:window:1.0.0-beta04] C:\Users\amilg\.gradle\caches\transforms-3\30a29284e0af5133c286ddb93fd9ec73\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:25:9-27:40
+82            android:name="androidx.window.extensions"
+82-->[androidx.window:window:1.0.0-beta04] C:\Users\amilg\.gradle\caches\transforms-3\30a29284e0af5133c286ddb93fd9ec73\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:26:13-54
+83            android:required="false" />
+83-->[androidx.window:window:1.0.0-beta04] C:\Users\amilg\.gradle\caches\transforms-3\30a29284e0af5133c286ddb93fd9ec73\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:27:13-37
+84        <uses-library
+84-->[androidx.window:window:1.0.0-beta04] C:\Users\amilg\.gradle\caches\transforms-3\30a29284e0af5133c286ddb93fd9ec73\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:28:9-30:40
+85            android:name="androidx.window.sidecar"
+85-->[androidx.window:window:1.0.0-beta04] C:\Users\amilg\.gradle\caches\transforms-3\30a29284e0af5133c286ddb93fd9ec73\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:29:13-51
+86            android:required="false" />
+86-->[androidx.window:window:1.0.0-beta04] C:\Users\amilg\.gradle\caches\transforms-3\30a29284e0af5133c286ddb93fd9ec73\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:30:13-37
+87
+88        <provider
+88-->[androidx.emoji2:emoji2:1.2.0] C:\Users\amilg\.gradle\caches\transforms-3\a92569c6581fe99adf95ee8d0172e725\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:24:9-32:20
+89            android:name="androidx.startup.InitializationProvider"
+89-->[androidx.emoji2:emoji2:1.2.0] C:\Users\amilg\.gradle\caches\transforms-3\a92569c6581fe99adf95ee8d0172e725\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:25:13-67
+90            android:authorities="com.example.flutter_application_1.androidx-startup"
+90-->[androidx.emoji2:emoji2:1.2.0] C:\Users\amilg\.gradle\caches\transforms-3\a92569c6581fe99adf95ee8d0172e725\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:26:13-68
+91            android:exported="false" >
+91-->[androidx.emoji2:emoji2:1.2.0] C:\Users\amilg\.gradle\caches\transforms-3\a92569c6581fe99adf95ee8d0172e725\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:27:13-37
+92            <meta-data
+92-->[androidx.emoji2:emoji2:1.2.0] C:\Users\amilg\.gradle\caches\transforms-3\a92569c6581fe99adf95ee8d0172e725\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:29:13-31:52
+93                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+93-->[androidx.emoji2:emoji2:1.2.0] C:\Users\amilg\.gradle\caches\transforms-3\a92569c6581fe99adf95ee8d0172e725\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:30:17-75
+94                android:value="androidx.startup" />
+94-->[androidx.emoji2:emoji2:1.2.0] C:\Users\amilg\.gradle\caches\transforms-3\a92569c6581fe99adf95ee8d0172e725\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:31:17-49
+95            <meta-data
+95-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\amilg\.gradle\caches\transforms-3\ae2217f3098ebc3f11d4e0a8f6f38e71\transformed\jetified-lifecycle-process-2.4.1\AndroidManifest.xml:31:13-33:52
+96                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+96-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\amilg\.gradle\caches\transforms-3\ae2217f3098ebc3f11d4e0a8f6f38e71\transformed\jetified-lifecycle-process-2.4.1\AndroidManifest.xml:32:17-78
+97                android:value="androidx.startup" />
+97-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\amilg\.gradle\caches\transforms-3\ae2217f3098ebc3f11d4e0a8f6f38e71\transformed\jetified-lifecycle-process-2.4.1\AndroidManifest.xml:33:17-49
+98        </provider>
+99    </application>
+100
+101</manifest>
