@@ -24,6 +24,6 @@ void main() {
     await downloadService.downloadImage(path, savePath);
 
     final file = File(savePath);
-    expect(await file.exists(), '{"message":"Successfully mocked GET!"}');
+    expect(await file.exists(), true);
   });
 }
