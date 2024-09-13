@@ -12,18 +12,31 @@ void main() {
     dio.httpClientAdapter = dioAdapter;
 
     const path = 'http://example.com/file.txt';
-    const savePath = '/path/to/save/file.txt';
+    const savePath = 'test/temp/file.txt'; // Use a writable path
 
     dioAdapter.onGet(
       path,
-      (request) => request.reply(200, {'message': 'Successfully mocked GET!'}),
+      (request) {
+        // Mock a file content
+        const content = 'Mock file content';
+        request.reply(200, content, headers: {
+          HttpHeaders.contentTypeHeader: ['text/plain'],
+        });
+      },
     );
 
     final downloadService = DownloadService(dio: dio);
+
+    // Ensure the directory exists
+    final dir = Directory('test/temp');
+    if (!await dir.exists()) {
+      await dir.create(recursive: true);
+    }
 
     await downloadService.downloadImage(path, savePath);
 
     final file = File(savePath);
     expect(await file.exists(), true);
+    expect(await file.readAsString(), 'Mock file content'); // Verify the content
   });
 }
