@@ -17,7 +17,6 @@ Setup Instructions:
 
 Clone the repository.
 Install dependencies using flutter pub get.
-Obtain an Unsplash API key and configure it in the application.
 Run the application using flutter run.
 This project serves as a practical example of how to combine external API integrations with state management solutions in Dart, providing a solid foundation for building more complex applications.
 
