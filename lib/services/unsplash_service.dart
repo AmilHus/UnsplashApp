@@ -1,10 +1,12 @@
 import 'dart:convert';
+import 'package:flutter_dotenv/flutter_dotenv.dart';
 import 'package:http/http.dart' as http;
 import '../models/image_model.dart';
 
 class UnsplashService {
   http.Client client = http.Client();
-  final String _accessKey = '43EkVmFwu78fBz-zOMQKuIg_GvfVcHkvy9GT-ALvbAw';
+
+  final String _accessKey = dotenv.env['ACCESS_KEY']!;
 
   Future<List<ImageModel>> fetchDataFromApi(int page) async {
     try {
