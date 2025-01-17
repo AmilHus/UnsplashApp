@@ -23,8 +23,8 @@ jobs:
       - name: Install dependencies
         run: flutter pub get
 
-      - name: Set environment variables
-        run: echo "ACCESS_KEY=${{ secrets.ACCESS_KEY }}" >> $GITHUB_ENV
+      - name: Restore .env file
+        run: echo "${{ secrets.ENV_FILE }}" > .env
 
       # Check formatting (uncomment if needed)
       # - name: Verify formatting
