@@ -1,1 +1,0 @@
- C:\\Users\\amilg\\Desktop\\project\\UnsplashApp\\.dart_tool\\flutter_build\\301b41452b9b747f7741d2c1a5d6845a\\native_assets.yaml: 

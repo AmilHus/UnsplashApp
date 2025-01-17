@@ -3,6 +3,6 @@
 3    package="com.baseflow.permissionhandler" >
 4
 5    <uses-sdk android:minSdkVersion="16" />
-5-->C:\Users\amilg\AppData\Local\Pub\Cache\hosted\pub.dev\permission_handler_android-12.0.12\android\src\main\AndroidManifest.xml
+5-->/Users/amil21/.pub-cache/hosted/pub.dev/permission_handler_android-12.0.12/android/src/main/AndroidManifest.xml
 6
 7</manifest>

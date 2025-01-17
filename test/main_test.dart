@@ -1,4 +1,5 @@
 import 'dart:convert';
+import 'package:flutter_dotenv/flutter_dotenv.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:http/http.dart';
 import 'package:http/testing.dart';
@@ -9,6 +10,7 @@ void main() {
     test(
         'searchDataFromApi returns list of photo URLs if the http call completes successfully',
         () async {
+      await dotenv.load(fileName: '.env');
       final unsplash = UnsplashService();
       unsplash.client = MockClient((request) async {
         return Response(
@@ -28,7 +30,8 @@ void main() {
     });
 
     test('searchDataFromApi handles delay correctly', () async {
-      final unsplash = UnsplashService();
+    await dotenv.load(fileName: '.env');
+    final unsplash = UnsplashService();
       unsplash.client = MockClient((request) async {
         return Response(
             jsonEncode({
